@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=DynaPuff:wght@600&family=IBM+Plex+Mono:wght@300;400;600&family=Mouse+Memoirs&family=Plus+Jakarta+Sans:wght@300;400&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=DynaPuff:wght@600&family=IBM+Plex+Mono:wght@300;400;600&family=Mouse+Memoirs&family=Plus+Jakarta+Sans:wght@300;400&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bowlby+One&family=DynaPuff:wght@600&family=IBM+Plex+Mono:wght@300;400;600&family=Mouse+Memoirs&family=Plus+Jakarta+Sans:wght@300;400&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bowlby+One&family=DynaPuff:wght@600&family=IBM+Plex+Mono:wght@300;400;600&family=Luckiest+Guy&family=Mouse+Memoirs&family=Plus+Jakarta+Sans:wght@300;400&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bowlby+One&family=DynaPuff:wght@600&family=IBM+Plex+Mono:wght@300;400;600&family=Luckiest+Guy&family=Mouse+Memoirs&family=Plus+Jakarta+Sans:wght@300;400&family=Roboto:wght@300&family=Sigmar+One&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik+One');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bowlby+One&family=Bowlby+One+SC&family=DynaPuff:wght@600&family=IBM+Plex+Mono:wght@300;400;600&family=Luckiest+Guy&family=Mouse+Memoirs&family=Plus+Jakarta+Sans:wght@300;400&family=Roboto:wght@300&family=Sigmar+One&family=Ubuntu:wght@300&display=swap');
+
+.nav-color{
+    background-color: #1492b4;
+    
+}
+.vector-image
+{
+width: 600px;
+}
+.section-div2-col{
+
+background-color: #e0c282;
+
+}
+.section-div1-col{
+
+background-color: #e06553;
+
+}
+.fontmousememories{
+ 
+
+font-family: 'Mouse Memoirs', sans-serif;
+
+
+}
+.yellow-col{
+    color: #fde64b;
+}
+/* addd */
+.bgcolre{
+    background:  #fde64b;;
+}
+.blackcolour{
+    color: black;
+}
+.roboticfont{
+   
+font-family: 'Roboto', sans-serif;
+
+}
+.bluecolor{
+    background: #068DA9;
+}
+
+
+.pinkcolor{
+    background: #E96479;
+}
+
+.browncolor{
+    background: #3E001F;
+}
+.purplecolour{
+background: #EF6262 ; 
+}
+.greencolour{
+    background: #EA906C ;
+    }
+
+    .prucolour{
+        background: #A760FF ;
+        }
+
+
+
+
+        .text-colour{
+
+color: whitesmoke;
+
+font-weight: bolder
+;
+
+
+        }
+
+
+
+        .aboutuscol{
+           background:  #016A70
+        }
+
+
+
+
+       /* scroll bar cahnge */
+
+
+       ::-webkit-scrollbar{
+        width :1.2rem;
+       }
+       ::-webkit-scrollbar-track{
+        background-color: #f3ecd8;
+        /* background: red; */
+       }
+       ::-webkit-scrollbar-thumb{
+        background-color: #f87f7d;
+        border-radius: 30px;
+        /* border: 2px solid #5b331a; */
+       }
+
+
+
+       .bowlbyonefont{
+        
+    
+        font-family: 'Bowlby One SC', cursive;
+        font-size: 35px;
+        
+
+       }
+       @media (max-width: 850px) {
+        .bowlbyonefont{
+        
+            
+            font-size: 25px;
+            
+            
+                   }
+       
+      }
+      @media (max-width: 1066px) {
+        .bowlbyonefont{
+        
+            
+            font-size: 25px;
+            
+            
+                   }
+       
+      }
+      @media (max-width: 1272px) {
+        .bowlbyonefont{
+        
+            
+            font-size: 25px;
+            
+            
+                   }
+       
+      }
+      
+
+
+.retroblue{
+    background-color: #F9DBBB;
+}
+.lucky-fonts{
+
+font-family: 'Luckiest Guy', cursive;
+
+}
+.rub-font{
+    font-family: 'Rubik One', sans-serif;
+}
+.whitecol{
+    color: black;
+    /* border: 2px solid black; */
+    /* font-weight: 500; */
+    /* font-family: 'Rubik One', sans-serif; */
+   
+}
+
+
+.whitecol:hover{
+    color: white;
+    /* font-size: 15px; */
+    transition: 0.2s ease-in;
+    /* border: 2px solid black; */
+   
+}
+/* whataapp floating icon */
+.whatsapp-float{
+    width: 60px;
+    height: 60px;
+    position: fixed; 
+   right: 20px;
+   bottom: 20px;
+   
+}
+.whatsapp-float img{
+    border-radius: 20px;
+    height: 60px;
+    width: 60px;
+   
+  
+}
+.custom-div{
+    height: 200px;
+    width: 350px;
+    margin: 50px;
+    border: 5px  #3876BF;
+    border-style: solid;
+    border-radius: 10px;
+   
+}
+.container-gs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.custom-div {
+    height: 250px;
+    width: 450px;
+    margin: 30px;
+    border: 5px solid #3876BF;
+    border-radius: 10px;
+    border-image: repeating-linear-gradient(45deg, transparent, transparent 5px, #068DA9 6px, #E96479 15px, transparent 16px, transparent 20px) 20/1rem;
+    overflow: hidden;
+}
+
+/* Media Query for tablets and smaller screens */
+@media (max-width: 768px) {
+    .custom-div {
+        width: calc(100% - 30px); /* Adjust width for mobile devices */
+        margin: 10px 15px ;
+    }
+    
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 576px ) {
+    .custom-div {
+        width: calc(100% - 30px); /* Adjust width for mobile devices */
+        margin: 10px 15px ;
+
+    }
+
+
+    
+}
+
+/* Additional styles for SVG icons to make them responsive */
+.custom-div svg {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 1052px ) {
+    .custom-div {
+        width: calc(100% - 30px); /* Adjust width for mobile devices */
+        margin: 10px 15px ;
+
+    }
+   
+
+
+    
+}
+.whitecolour-text{
+    color:#D04848;
+    font-weight:500 ;
+    font-size:20px;
+}
+

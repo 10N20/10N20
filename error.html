@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Found</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Oswald:400|Open+Sans:700);
+
+        @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+        /* fontawesome */
+        [class*="fontawesome-"]:before {
+            font-family: 'FontAwesome', sans-serif;
+        }
+
+        body {
+            background: #e6e6d8 url("images/bg-retro-noise.png");
+            color: #121212;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        section.text {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1, h3 {
+            font-weight: 400;
+        }
+
+        h1 {
+            font-family: "Oswald", sans-serif;
+            text-transform: uppercase;
+            font-size: 3rem;
+            text-shadow: 4px 5px #e6e6d8, 6px 7px #c6a39a;
+        }
+
+        h1 span.star {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-family: "Open Sans", sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        h3:before, h3:after {
+            content: " ";
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            background-color: #121212;
+        }
+
+        h3:before {
+            top: 50%;
+            left: -70px;
+            transform: translateY(-50%);
+        }
+
+        h3:after {
+            top: 50%;
+            right: -70px;
+            transform: translateY(-50%);
+        }
+
+        /* Make it responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h1 span.star {
+                font-size: 1rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            h3:before,
+            h3:after {
+                width: 40px;
+                height: 1px;
+                top: 50%;
+                left: -50px;
+                transform: translateY(-50%);
+            }
+
+            h3:after {
+                right: -50px;
+                left: unset;
+            }
+        }
+
+        /* Make the image responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <section class="text">
+      
+        <h3>"Uh-oh, Dead End"</h3>
+        <h1><span class="fontawesome-star star"></span> <span>"We apologize, but the page you're looking for seems to have taken a detour to a digital black hole. It's possible that it has moved, been deleted, or simply never existed in the first place. Please navigate back to our homepage or use the search bar to find what you're seeking. If you believe this is an error, feel free to contact our support team. Thanks for your patience!"</span> <span class="fontawesome-star star"></span></h1>
+      
+    </section>
+</body>
+</html>
