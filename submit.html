@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not Found</title>
+    <meta http-equiv="refresh" content="20;index.html">
+    <title>Submit</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         @import url(https://fonts.googleapis.com/css?family=Oswald:400|Open+Sans:700);
@@ -117,10 +121,29 @@
     <section class="text">
   
         <h3 data-aos="fade-right">"Your Digital Pigeon Has Flown!"</h3>
+        <h3 data-aos="fade-right">This page will redirect to Home page in <span id="countdown">20</span> seconds...</h3>
+       
         <h1 data-aos="fade-left"><span class="fontawesome-star star"></span> <span>"Thank you for contacting us! Your message has been successfully submitted. Our team will review your inquiry and get back to you as soon as possible. In the meantime, feel free to explore more of our website and learn about our services."</span> <span class="fontawesome-star star"></span></h1>
       
     </section>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>  AOS.init();</script>
+    <script>
+        // Function to redirect after a specified time
+        function redirect(count) {
+            setTimeout(function() {
+                count--;
+                document.getElementById('countdown').textContent = count;
+                if (count > 0) {
+                    redirect(count); // Call the function recursively
+                } else {
+                    window.location.href = "your_destination_page.html"; // Redirect when countdown reaches 0
+                }
+            }, 1000); // 1000 milliseconds = 1 second
+        }
+
+        // Start the countdown
+        redirect(20); // Redirect after 10 seconds
+    </script>
 </body>
 </html>

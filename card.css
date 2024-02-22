@@ -1,0 +1,85 @@
+/*Neo Brutalism pricing card*/
+.card-1{
+    width: 210px;
+    background: #7ED7C1;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.5vmin solid #05060f;
+    box-shadow: 0.4rem 0.4rem #05060f;
+    overflow: hidden;
+    color: black;
+    margin:  2% auto;
+  }
+  
+  /*Card content*/
+  .pricing-block-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .pricing-plan {
+    color: #05060f;
+    font-size: 1.3rem;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+  
+  .price-value {
+    display: flex;
+    color: #05060f;
+    font-size: 1.8rem;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+  
+  .pricing-note {
+    opacity: 0.8;
+  }
+  
+  /*Checklist*/
+  .check-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .check-list-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  @media (max-width: 768px){
+    .cards-section{
+        flex-direction: column;
+        
+
+    }
+  } 
+
+
+  .main-plans{
+    background-color: #F9E8D9;
+  }
+
+  .form-button{
+    padding: 8px 5px;
+    background-color : #D04848;
+    border-radius: 10px ;
+    border:  3px solid black;
+    box-shadow: 0.2rem 0.2rem #05060f;
+    
+  }
+  .form-button > a{
+    color: white;
+    text-decoration: none;
+    
+  }
+  .form-button > a:hover{
+ color: white;
+    text-decoration: none;
+    
+  }
+ 

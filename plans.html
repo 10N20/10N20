@@ -5,37 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="plans.css">
+    <!-- <link rel="stylesheet" href="plans.css"> -->
     <link rel="stylesheet" href="utill.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="logos/savicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="whatweoffer.css">
+    <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="utill.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://themify.me/wp-content/themes/themify-v32/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body >
+   
+    <div id="preloader">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    </div>
+    <!-- preloader ended -->
+
+    <!-- loading bar start -->
+    <div class="progress-bar-container">
+        <div class="progress-bar1 ">
+            <div class="filled1">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- loading bar end -->
+
+    <!-- header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light shadow-sm  nav-color " style="background:#d3ab73">
-            <div class="container "> <a class="navbar-brand d-flex align-items-center" href="index.html">
-       
-            <span class="ml-3 font-weight-bold">10N20</span>
-            </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            
-            <div class="collapse navbar-collapse " id="navbar4">
-            <ul class="navbar-nav mr-auto pl-lg-4">
-            <li class="nav-item px-lg-2 active"> <a class="nav-link" href="#"> <span class="d-inline-block d-lg-none icon-width"><i class="fa fa-home"></i></span>Home</a> </li>
-            
-            
-            <!-- <li class="nav-item px-lg-2 dropdown d-menu ">
+
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm  nav-color ">
+            <div class="container "> <a class="navbar-brand d-flex align-items-center" href="./index.html">
+
+                    <span class="ml-3 font-weight-bold yellow-col">10N20</span>
+                </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+                    data-target="#navbar4">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse " id="navbar4">
+                    <ul class="navbar-nav mr-auto pl-lg-4">
+                        <li class="nav-item px-lg-2 active "> <a class="nav-link" href="./index.html"> <span
+                                    class="d-inline-block d-lg-none icon-width "><i class="fa fa-home"></i></span><span
+                                    class="whitecol font-weight-bold">Home</span></a> </li>
+                        <li class="nav-item px-lg-2 "> <a class="nav-link " href="#section2"><span
+                                    class="d-inline-block d-lg-none icon-width "><i class="fa fa-sun-o"></i></span><span
+                                    class="whitecol font-weight-bold">Services</span></a> </li>
+                        <li class="nav-item px-lg-2 "> <a class="nav-link" href="#contactus"><span
+                                    class="d-inline-block d-lg-none icon-width "><i
+                                        class="fa fa-user"></i></i></span><span
+                                    class="whitecol font-weight-bold">Contact us</span></a> </li>
+
+                        <!-- <li class="nav-item px-lg-2 dropdown d-menu ">
                 
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="d-inline-block d-lg-none icon-width"><i class="	fa fa-caret-square-o-down 	"></i></span>Dropdown
             
@@ -46,16 +82,41 @@
             <a class="dropdown-item" href="#">Something else here</a>
             </div>
             </li> -->
-            
-          
-            </ul>
-           
+
+                        <li class="nav-item px-lg-2 "> <a class="nav-link" href="#"><span
+                                    class="d-inline-block d-lg-none icon-width "><i
+                                        class="fa fa-envelope"></i></span><span
+                                    class="whitecol font-weight-bold">Contact</span></a> </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto mt-3 mt-lg-0  ">
+                        <!-- <li class="nav-item "> <a class="nav-link" href="#">
+                <i class="fa fa-twitter"></i><span class="d-lg-none ml-3">Twitter</span>
+            </a> </li> -->
+                        <li class="nav-item "> <a class="nav-link" href="plans.html">
+                                <button class="nav-plan-button rub-font plan-ani">Our Plans</button>
+                            </a> </li>
+                        <li class="nav-item "> <a class="nav-link" href="https://10n21.framer.ai/">
+                                <button class="nav-plan-button rub-font plan-ani">project</button>
+                            </a> </li>
+                        <!-- <li class="nav-item"> <a class="nav-link" href="#">
+            <i class="fa fa-facebook"></i><span class="d-lg-none ml-3">Facebook</span>
+            </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#">
+            <i class="fa fa-instagram"></i><span class="d-lg-none ml-3">Instagram</span>
+            </a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#">
+            <i class="fa fa-linkedin"></i><span class="d-lg-none ml-3">Linkedin</span>
+            </a> </li> -->
+                    </ul>
+                </div>
             </div>
-            </div>
-            </nav>
-        
+        </nav>
+
     </header>
-    <main>
+
+
+
+    <main class="main-plans">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center h-100">
@@ -64,242 +125,945 @@
             </div>
         </div>
         
-        
-        <div class="plans-body-div1">
-            <div class="plans-body-div2">
-                <section class="pricing-plans">
-                    <div class="pricing-card basic">
-                        <div class="heading d-flex flex-column justify-content-center align-items-center ">
-                            <h4 class="TEALEBACKGORUND   p-4 plannamehead "><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-jewish-star" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M12 2l3 5h6l-3 5l3 5h-6l-3 5l-3 -5h-6l3 -5l-3 -5h6z"></path>
-                             </svg>BASIC<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-jewish-star" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M12 2l3 5h6l-3 5l3 5h-6l-3 5l-3 -5h-6l3 -5l-3 -5h6z"></path>
-                             </svg> </h4>
-                            <p></p>
-                        </div>
-                        <p class="price">
-                            ₹14999
-                            <sub>/month</sub>
-                        </p>
-                         <div class=" d-flex flex-column justify-content-center align-items-center">
-                        <ul class="features">
-                            <li>
-                                <i class="fa-solid fa fa-check"></i>
-                                <strong>WordPress website</strong> 
-                            </li>
-                           
-                            <li>
-                                <i class="fa-solid fa  fa-check"></i>
-                                <strong>4+1 Pages</strong> 
-                            </li>
-                           
-                            <li>
-                                <i class="fa-solid fa fa-check"></i>
-                                <strong>WP Admin dashboard</strong>
-                            </li>
-                            
-                           <li>
-                                <i class="fa-solid fa fa-check"></i>
-                                <strong>1 Major + 4 Months minor update </strong> 
-                            </li>
-                            <li>
-                                <i class="fa-solid fa fa-check"></i>
-                                <strong>Hosting not included  </strong> 
-                            </li>
-                             <li>
-                                <i class="fa-solid fa fa-check"></i>
-                                <strong>  <span style="color: red;"> 1 Year Technical Support</span></strong>
-                            </li>
-                             <!--<li>
-                                <i class="fa-solid fa-check"></i>
-                                <strong>cPanel</strong> control panel
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <strong>Free SSL</strong> certificate
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <strong>24/7</strong> support
-                            </li> -->
-                        </ul>
-                    </div>
-                        <button class="cta-btn">SELECT</button>
-                    </div>
-                    <div class="pricing-card standard ">
-                        <div class="heading d-flex flex-column justify-content-center align-items-center">
-                            <h4 class="ORGANGEBACKGORUND p-4 plannamehead"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-jewish-star" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M12 2l3 5h6l-3 5l3 5h-6l-3 5l-3 -5h-6l3 -5l-3 -5h6z"></path>
-                             </svg>STANDARD<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-jewish-star" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M12 2l3 5h6l-3 5l3 5h-6l-3 5l-3 -5h-6l3 -5l-3 -5h6z"></path>
-                             </svg> </h4>
-                            <p></p>
-                        </div>
-                        <p class="price">
-                            ₹17999
-                            <sub>/month</sub>
-                        </p>
-                        <div class=" d-flex flex-column justify-content-center align-items-center"> 
-                        <ul class="features">
-                            <li>
-                                <i class="fa-solid fa fa-check"></i>
-                                <strong>WordPress website</strong> 
-                            </li>
-                           
-                            <li>
-                                <i class="fa-solid fa fa-check"></i>
-                                <strong>4+1 Pages</strong> 
-                            </li>
-                           
-                            <li>
-                                <i class="fa-solid fa fa-check"></i>
-                                <strong>WP Admin dashboard</strong>
-                            </li>
-                            
-                           <li>
-                                <i class="fa-solid fa fa-check"></i>
-                                <strong>2 Major + 6 Months minor update </strong> 
-                            </li>
-                            <li>
-                                <i class="fa-solid fa fa-check"></i>
-                                <strong>Hosting included  </strong> 
-                            </li>
-                             <li>
-                                <i class="fa-solid fa fa-check"></i>
-                                <strong>  <span style="color: red;"> 1 Year Technical Support</span></strong>
-                            </li>
-                            <!-- <li>
-                                <i class="fa-solid fa-check"></i>
-                                <strong>cPanel</strong> control panel
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <strong>Free SSL</strong> certificate
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <strong>24/7</strong> support
-                            </li> -->
-                        </ul>
-                    </div>
-                        <button class="cta-btn">SELECT</button>
-                    </div>
-                    <div class="pricing-card premium">
-                        <div class="heading d-flex flex-column justify-content-center align-items-center">
-                            <h4 class="TEALEBACKGORUND plannamehead p-4"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-jewish-star" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M12 2l3 5h6l-3 5l3 5h-6l-3 5l-3 -5h-6l3 -5l-3 -5h6z"></path>
-                             </svg>PREMIUM<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-jewish-star"  width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M12 2l3 5h6l-3 5l3 5h-6l-3 5l-3 -5h-6l3 -5l-3 -5h6z"></path>
-                             </svg></h4>
-                            <p></p>
-                        </div>
-                        <p class="price">
-                            ₹19999
-                            <sub>/month</sub>
-                        </p>
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                        <ul class="features">
-                            <li>
-                                <i class="fa-solid fa fa-check"></i>
-                                <strong>Modern technology</strong> 
-                            </li>
-                           
-                            <li>
-                                <i class="fa-solid fa fa-check"></i>
-                                <strong> 4+1 Pages</strong> 
-                            </li>
-                           
-                            <li>
-                                <i class="fa-solid fa fa-check"></i>
-                                <strong>WP Admin dashboard</strong>
-                            </li>
-                            
-                           <li>
-                                <i class="fa-solid fa fa-check"></i>
-                                <strong>1 Major + 6 Months minor update </strong> 
-                            </li>
-                            <li>
-                                <i class="fa-solid fa fa-check"></i>
-                                <strong>Hosting not included  </strong> 
-                            </li>
-                             <li>
-                                <i class="fa-solid fa fa-check"></i>
-                                <strong>  <span style="color: red;"> 1 Year Technical Support</span></strong>
-                            </li>
-                        </ul>
-                    </div>
-                        <button class="cta-btn">SELECT</button>
-                    </div>
-                </section>
-            </div>
+        <div class="cards-section container d-flex justify-content-center mt-5" >
+            <div class="card-1"  data-aos="fade-right">
+                <div class="pricing-block-content">
+                  <p class="pricing-plan">For Small Businesses</p>
+                  <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+                    <p class="price-number">&#8377;<span class="price-integer">14999</span></p>
+                    <div id="priceDiscountCent"></div>
+                  </div>
+                  <div class="pricing-note">WordPress Website</div>
+                  <ul class="check-list" role="list">
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      > 4 Pages
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >WP Admin dashboard
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >Hosting not included
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >1 Year Technical Support
+                    </li>
+                  </ul>
+                  <button  class="form-button" ><a href="./form.html">Select</a></button></a>
+                </div>
+               
+              </div>
+              <div class="card-1"  data-aos="fade-right">
+                <div class="pricing-block-content">
+                  <p class="pricing-plan"> For Growing Businesses</p>
+                  <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+                    <p class="price-number">₹<span class="price-integer">17999</span></p>
+                    <div id="priceDiscountCent"></div>
+                  </div>
+                  <div class="pricing-note">WordPress website</div>
+                  <ul class="check-list" role="list">
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >4+1 Pages
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >WP Admin dashboard
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >Hosting included
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >1 Year Technical Support
+                    </li>
+                  </ul>
+                  <button class="form-button" ><a href="./form.html">Select</a></button></a>
+                </div>
+              </div>
+                <div class="card-1"  data-aos="fade-right">
+                <div class="pricing-block-content">
+                  <p class="pricing-plan"> For Established Businesses</p>
+                  <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+                    <p class="price-number"></p>₹<span class="price-integer">19999</span></p>
+                    <div id="priceDiscountCent"></div>
+                  </div>
+                  <div class="pricing-note">Custom-Coded</div>
+                  <ul class="check-list" role="list">
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      > 4 pages
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >Responsive
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >SEO-Inclusive Development
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >1 Year Technical Support
+                    </li>
+                  </ul>
+                  <button  class="form-button" ><a href="./form.html">Select</a></button></a>
+                </div>
+              </div>
+              
+        </div>
+        <div class="cards-section container d-flex justify-content-center mt-2 pb-5" >
+            <div class="card-1"  data-aos="fade-left">
+                <div class="pricing-block-content">
+                  <p class="pricing-plan"> For  Large Enterprises</p>
+                  <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+                    <p class="price-number">₹</p><span class="price-integer">24999</span></p>
+                    <div id="priceDiscountCent"></div>
+                  </div>
+                  <div class="pricing-note">Custom-Coded</div>
+                  <ul class="check-list" role="list">
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >6 Pages
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >Responsive
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >SEO-Inclusive Development
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >1 Year Technical Support
+                    </li>
+                  </ul>
+                  <button class="form-button"> <a href="./form.html"> Select</a></button>
+                </div>
+              </div>
+              <div class="card-1" data-aos="fade-left">
+                <div class="pricing-block-content">
+                  <p class="pricing-plan">For Large Enterprises</p>
+                  <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+                    <p class="price-number">₹<span class="price-integer">30000</span></p>
+                    <div id="priceDiscountCent"></div>
+                  </div>
+                  <div class="pricing-note">Custom-Coded</div>
+                  <ul class="check-list" role="list">
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >8 Pages 
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >SEO + Responsive
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >Free Domain  (Upto ₹999 )
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >1 Year Technical Support
+
+                    </li>
+                  </ul>
+                  <button class="form-button"> <a href=" ./form.html"> Select</a></button>
+                </div>
+              </div>
+                <div class="card-1" data-aos="fade-left">
+                <div class="pricing-block-content">
+                  <p class="pricing-plan">For webiste Maintenance</p>
+                  <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+                    <p class="price-number">₹<span class="price-integer">9999</span></p>
+                    <div id="priceDiscountCent">/mo</div>
+                  </div>
+                  <div class="pricing-note">free forever</div>
+                  <ul class="check-list" role="list">
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >Security monitoring
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >Performance scans
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      > Monthly analytic report
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg
+                      >1-3 hours of support time
+                    </li>
+                  </ul>
+                  <button class="form-button "> <a  href="./form.html">Select</a></button>
+                </div>
+              </div>
+              
         </div>
         
-        <div class="plans-body-div1">
-            <div class="plans-body-div2">
-                <section class="pricing-plans">
-                    <div class="pricing-card basic">
-                        <div class="heading d-flex flex-column justify-content-center align-items-center ">
-                            <h4 class="TEALEBACKGORUND   p-4 plannamehead "><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-jewish-star" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M12 2l3 5h6l-3 5l3 5h-6l-3 5l-3 -5h-6l3 -5l-3 -5h6z"></path>
-                             </svg>GOLD<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-jewish-star" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M12 2l3 5h6l-3 5l3 5h-6l-3 5l-3 -5h-6l3 -5l-3 -5h6z"></path>
-                             </svg> </h4>
-                            <p></p>
-                        </div>
-                        <p class="price">
-                            ₹24999
-                            <sub>/month</sub>
-                        </p>
-                         <div class=" d-flex flex-column justify-content-center align-items-center">
-                        <ul class="features">
-                            <li>
-                                <i class="fa-solid fa fa fa-check"></i>
-                                <strong>Modern technology</strong> 
-                            </li>
-                           
-                            <li>
-                                <i class="fa-solid fa fa fa-check"></i>
-                                <strong> 4+1 Pages</strong> 
-                            </li>
-                           
-                            <li>
-                                <i class="fa-solid fa fa fa-check"></i>
-                                <strong>WP Admin dashboard</strong>
-                            </li>
-                            
-                           <li>
-                                <i class="fa-solid fa fa fa-check"></i>
-                                <strong>3 Major +  6 Months minor update </strong> 
-                            </li>
-                            <li>
-                                <i class="fa-solid fa fa fa-check"></i>
-                                <strong>Hosting  included  </strong> 
-                            </li>
-                             <li>
-                                <i class="fa-solid fa fa fa-check"></i>
-                                <strong>  <span style="color: red;"> 1 Year Technical Support</span></strong>
-                            </li>
-                        </ul>
-                    </div>
-                        <button class="cta-btn">SELECT</button>
-                    </div>
-                    
-                    
-                </section>
-            </div>
-        </div>
+    
+        
+        
     </main>
 
-   
-    <script src="index.html"></script>
+
+
+
+    <footer>
+
+
+        <div class="footer-body">
+
+            <div class="new_footer_area bg_color">
+                <div class="new_footer_top">
+                    <div class="container responsive-footer">
+                        <div class="row ">
+                            <div class="col-lg-3 col-md-6 ">
+                                <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
+                                    style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                    <div class="container">
+                                        <h3 class="f-title f_600 t_color f_size_18 blackcolour ">About US</h3>
+
+                                        <p class="text-center text-lg-left">
+                                            At 10N20, we are a web development agency based in Jammu, Jammu and Kashmir.
+                                            With our expertise and dedication, we strive to provide exceptional web
+                                            development solutions to our clients.
+                                        </p>
+                                    </div>
+
+                                    <!-- <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                            <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                            <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                            <p class="mchimp-errmessage" style="display: none;"></p>
+                            <p class="mchimp-sucmessage" style="display: none;"></p>
+                        </form> -->
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6  center-responsive">
+                                <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+                                    style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                    <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                                    <ul class="list-unstyled f_list ">
+                                        <li><a href="error.html">Company</a></li>
+
+                                        <li><a href="error.html">Desktop</a></li>
+                                        <li><a href="error.html">Projects</a></li>
+                                        <li><a href="error.html">My tasks</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 center-responsive">
+                                <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
+                                    style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                    <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                                    <ul class="list-unstyled f_list">
+                                        <li><a href="error.html">FAQ</a></li>
+                                        <li><a href="error.html">Term &amp; conditions</a></li>
+                                        <li><a href="error.html">Reporting</a></li>
+                                        <li><a href="error.html">Documentation</a></li>
+                                        <li><a href="error.html">Support Policy</a></li>
+                                        <li><a href="error.html">Privacy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 center-responsive ">
+                                <div class="f_widget social-widget pl_70 wow fadeInLeft makeresponsive"
+                                    data-wow-delay="0.8s"
+                                    style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                    <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                                    <div class="f_social_icon">
+                                        <!-- <a href="#" class="fa fa-gmail"></a> -->
+                                        <a href="#" class="fa fa-twitter"></a>
+                                        <a href="#" class="fa fa-linkedin"></a>
+                                        <a href="https://instagram.com/10n.20?igshid=MzRlODBiNWFlZA=="
+                                            class="fa fa-instagram"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_bg">
+                        <div class="footer_bg_one"></div>
+                        <div class="footer_bg_two"></div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center text-center">
+                            <div class="col-lg-6 col-sm-7">
+                                <p class="mb-0 f_400">© <span style="color: #5932ae;">10N20</span> All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div data-aos="fade-left" class="whatsapp-float">
+            <a href="https://wa.me/916006448984" target="_blank"><img src="images/whatsapp.svg"
+                    style="height: 60px;width: 60px;" alt=""></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script  src="script.js"></script>
 </body>
 
 </html>
