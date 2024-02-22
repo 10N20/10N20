@@ -1,6 +1,6 @@
 /*Neo Brutalism pricing card*/
 .card-1{
-    width: 210px;
+    width: 250px;
     background: #7ED7C1;
     padding: 1rem;
     border-radius: 1rem;
@@ -56,6 +56,11 @@
         flex-direction: column;
         
 
+    }
+    .card-1{
+      width: 250px;
+      margin-bottom: 30px;
+   
     }
   } 
 

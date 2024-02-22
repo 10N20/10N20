@@ -19,6 +19,7 @@ width: 600px;
 
 background-color: #F7B787;
 
+
 }
 .section-div1-col{
 
@@ -215,6 +216,10 @@ font-family: 'Luckiest Guy', cursive;
         margin: 10px 15px ;
 
     }
+    #phone-remover{
+        display: none !important;
+    }
+     
 
 
     

@@ -164,40 +164,77 @@
         <div class="row">
                 <h4 style="text-align:center">We'd love to hear from you!</h4>
         </div>
-        <div class="row input-container">
+        <form class="row input-container"  action="https://formspree.io/f/mayrjwjn"
+        method="POST">
                 <div class="col-xs-12">
                     <div class="styled-input wide">
-                        <input type="text" required />
+                        <input type="text"  name="name" required />
                         <label>Name</label> 
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="styled-input">
-                        <input type="text" required />
+                        <input type="text" name="email" required />
                         <label>Email</label> 
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="styled-input" style="float:right;">
-                        <input type="text" required />
+                        <input type="tel" name="phonenumber" required />
                         <label>Phone Number</label> 
                     </div>
                 </div>
                 <div class="col-xs-12">
                     <div class="styled-input wide">
-                        <textarea required></textarea>
+                        <textarea name="messgae" required></textarea>
                         <label>Message</label>
                     </div>
                 </div>
                 <div class="col-xs-12">
-                    <button class="btn-lrg submit-btn"> <a class="submit-link" href="./submit.html">Send Message</a></button>
+                    <button class="btn-lrg submit-btn"> <a class="submit-link" >Send Message</a></button>
                 </div>
-        </div>
+        </form>
     </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"> </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
       </script>
+      <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/mayrjwjn",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
+
 </body>
 </html>

@@ -193,7 +193,7 @@ outline: none;
 .filled1 {
   width: 0;
   height: 100%;
-  background: white;
+  background: #7ED7C1;
 }
 /* /progress bar endd */
 
@@ -262,6 +262,8 @@ margin-bottom: 50px;
 
 
   }
+
+  
   
  .box-sizeres {
   height: 230px;
