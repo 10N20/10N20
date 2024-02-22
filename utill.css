@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bowlby+One&family=Bowlby+One+SC&family=DynaPuff:wght@600&family=IBM+Plex+Mono:wght@300;400;600&family=Luckiest+Guy&family=Mouse+Memoirs&family=Plus+Jakarta+Sans:wght@300;400&family=Roboto:wght@300&family=Sigmar+One&family=Ubuntu:wght@300&display=swap');
 
 .nav-color{
-    background-color: #1492b4;
+    background-color: #F7B787;
     
 }
 .vector-image
@@ -17,12 +17,12 @@ width: 600px;
 }
 .section-div2-col{
 
-background-color: #e0c282;
+background-color: #F7B787;
 
 }
 .section-div1-col{
 
-background-color: #e06553;
+background-color: #F7B787;
 
 }
 .fontmousememories{
@@ -33,27 +33,7 @@ font-family: 'Mouse Memoirs', sans-serif;
 
 }
 .yellow-col{
-    color: #fde64b;
-}
-/* addd */
-.bgcolre{
-    background:  #fde64b;;
-}
-.blackcolour{
-    color: black;
-}
-.roboticfont{
-   
-font-family: 'Roboto', sans-serif;
-
-}
-.bluecolor{
-    background: #068DA9;
-}
-
-
-.pinkcolor{
-    background: #E96479;
+    color: #D83F31;
 }
 
 .browncolor{
@@ -63,7 +43,7 @@ font-family: 'Roboto', sans-serif;
 background: #EF6262 ; 
 }
 .greencolour{
-    background: #EA906C ;
+    background: #F7B787 ;
     }
 
     .prucolour{
@@ -86,7 +66,7 @@ font-weight: bolder
 
 
         .aboutuscol{
-           background:  #016A70
+           background:  #F9E8D9
         }
 
 

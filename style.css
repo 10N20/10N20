@@ -20,7 +20,7 @@ html{
 /* preloadeer */
 
 #preloader {
-    background: #00715f;
+    background: #45474B;
      background-size: 30%;
        position: fixed;
     top: 0;
@@ -491,7 +491,7 @@ font-weight: 700;
 }
 .section-2{
 
-  background: #EA906C;
+  background: #F9E8D9;
   
   }
   /* section4 */
@@ -504,7 +504,7 @@ color: #F1C93B;
 
   }
   .section4{
-    background: #891c29;
+    background: #F9E8D9;
   }
 
   /* secrtion the team */
@@ -1020,7 +1020,7 @@ form {
 
 font-size: 20px;
 font-weight: 500;
-color: #e2e2eb;
+
 
 
 }

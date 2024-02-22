@@ -22,11 +22,11 @@ body {
 }
 
 .dark {
-  background: #EA906C;
+  background: #F9E8D9;
 }
 
 .light {
-  background: rgb(137, 28, 41);
+  background: #F9E8D9;
 }
 
 a,
@@ -51,16 +51,16 @@ a:hover {
   margin: 0 0 2rem 0;
   overflow: hidden;
   position: relative;
-  color: #ffffff;
+  color: black;
   
 }
 
 .postcard.dark {
-  background-color: #C27664;
+  background-color: #F7B787;
 }
 
 .postcard.light {
-  background-color: #FF6E31;
+  background-color: #F7B787;
 }
 
 .postcard.t-dark {
@@ -230,11 +230,11 @@ a:hover {
   }
 
   .postcard.dark .postcard__text:before {
-    background:pink
+    background:none
   }
 
   .postcard.light .postcard__text:before {
-    background: teal;
+    background: none;
   }
 }
 
