@@ -9,6 +9,7 @@
     overflow: hidden;
     color: black;
     margin:  2% auto;
+    
   }
   
   /*Card content*/
@@ -68,13 +69,23 @@
   .main-plans{
     background-color: #F9E8D9;
   }
-
-  .form-button{
+  .buttonlink{
     padding: 8px 5px;
     background-color : #D04848;
     border-radius: 10px ;
     border:  3px solid black;
     box-shadow: 0.2rem 0.2rem #05060f;
+    text-align: center;
+
+  }
+  .form-button{
+   
+
+   border: none;
+   background-color : #D04848;
+   color: white;
+   
+   
     
   }
   .form-button > a{
