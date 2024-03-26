@@ -52,6 +52,8 @@ a:hover {
   overflow: hidden;
   position: relative;
   color: black;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  border: 5px #05060f solid;
   
 }
 
