@@ -1,0 +1,406 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* baclk adn white */
+@font-face {
+    font-family: 'abd';
+    src: url('./Intro-Font/Intro.otf') format('opentype');
+  
+}
+@font-face {
+  font-family: 'abd-print';
+  src: url('./Intro-Font/Intro\ Inline.otf') format('opentype');
+
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #160202;
+  z-index: 9999;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  color: aliceblue;
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: aliceblue ;
+  margin-right: 10px; /* Adjust the gap between icons */
+}
+
+.social-icons a:last-child {
+  margin-right: 0; /* Remove margin from the last icon */
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* text-rendering: optimizeSpeed; */
+  
+}
+body,html{
+    overflow-x: hidden;
+    /* overflow-y: hidden ; */
+    font-family: 'abd'  !important;
+    scroll-behavior: smooth !important;
+    background: #10141B;
+    
+}
+/* header */
+.abd-print{
+  font-family: 'abd-print' !important;
+}
+
+
+header{
+
+  padding: 6px 10px;
+  /* box-shadow: 0px 0px 4px 2px #565656; */
+}
+header div.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.navbar div.logo{
+  color: #f5f5f5 !important;
+
+}
+
+
+div.nav-links ul.links{
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+}
+ul.links li{
+  margin: 0px 10px;
+}
+ul.links li:last-child{
+  margin-right: 0;
+}
+ul.links li a{
+  color: white;
+  text-decoration: none;
+
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all .2s ease-in-out;
+}
+ul.links li a:hover,
+ul.links li a:focus{
+  color: #d31041;
+}
+
+div.menu-trigger{
+  display: none;
+}
+button.close-nav{
+  display: none;
+}
+div.menu-trigger button{
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+div.menu-trigger button:focus,
+div.menu-trigger button:hover{
+  color: #f3f26f;
+}
+div.content{
+  margin-top: 150px;
+  text-align: center;
+}
+div.content p{
+  font-family: "Roboto", sans-serif;
+  color: #464686;
+  font-size: 1.3rem;
+}
+div.content a{
+  margin-top: 30px;
+  display: block;
+  color: grey;
+  /* font-family: "Roboto", sans-serif; */
+  transition: all .3s ease-out;
+}
+div.content a:hover{
+  color: red;
+}
+@media screen and (min-width: 1000px){
+  header{
+    margin: 0px 10%;
+  }
+}
+@media screen and (max-width: 600px){
+
+  div.nav-links{
+    display: none;
+    /* background-color: #252525; */
+    background: #10141B;
+    position: fixed;
+    min-width: 300px;
+    height: 100%;
+    top: 0;
+    padding: 0;
+    right: 0;
+    z-index: 2;
+    animation: appear 0.4s ease-in-out;
+  }
+  @keyframes appear{
+    0%{
+        right: -300px;
+    }
+    100%{
+      right: 0px;
+    }
+  }
+  div.nav-links ul.links{
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin-top: 30px;
+  }
+  ul.links li{
+    margin: 0;
+  }
+  ul.links li a{
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1.5rem;
+  }
+  ul.links li a:hover,
+  ul.links li a:focus{
+    /* background: #efefef; */
+    /* color:#595907; */
+    border-bottom: 2px solid #fff ;
+  }
+  button.close-nav{
+    display: block;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 8px;
+    left: 268px;
+    cursor: pointer;
+  }
+  button.close-nav:focus{
+    color: red;
+  }
+  div.menu-trigger{
+    display: block;
+  }
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 576px) {
+  /* Adjust font size for smaller screens */
+  #heading {
+    font-size: 7vh !important; /* You can adjust this value as needed */
+  }
+}
+
+/* main */
+#heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensures the heading is on top of the canvas */
+    font-size: 10vh ;
+    text-align: center;
+    /* font-family: 'abd-print' !important; */
+   color: #1F1717;
+  
+}
+
+/* bento grid */
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 2fr)); */
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.grid-item img {
+ 
+  width: 100%; /* Adjust the width as needed */
+    height: auto; /* This will maintain the aspect ratio */
+    object-fit: cover; 
+
+
+}
+
+.content-grid {
+  padding: 20px;
+text-align: left;
+margin-top: 60px;
+}
+
+.content-grid h2 {
+  margin: 0;
+  font-size: 44px;
+}
+
+.content-grid p {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 400 !important;
+  line-height: 1.8;
+}
+
+/* Responsive styles */
+
+
+
+.grid-item.large {
+  grid-column: span 2; /* This will make the fourth item span two columns */
+  grid-row: span 2; /* This will make the fourth item span two rows */
+}
+
+.grid-item.medium {
+  grid-column: span 2; /* This will make the second item span two columns */
+  grid-row: span 1; /* This will make the second item span one row */
+}
+
+/* Adjust the grid layout for smaller screens if necessary */
+@media (max-width: 600px) {
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
+  .grid-item.large, .grid-item.medium {
+      grid-column: span 1; /* Adjust for smaller screens */
+      grid-row: span 1; /* Adjust for smaller screens */
+  }
+
+  
+}
+
+
+@media (max-width: 768px) {
+  .grid-container {
+     grid-template-columns: 1fr; /* Stack grid items vertically on smaller screens */
+  }
+  .grid-item.large, .grid-item.medium {
+     grid-column: span 1; /* Ensure each item takes up the full width on smaller screens */
+     grid-row: span 1; /* Ensure each item takes up the full width on smaller screens */
+  }
+  .d-none-1 {
+     display: none;
+  }
+ }
+
+
+
+ .content-grid {
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the transform property */
+}
+
+.content-grid:hover {
+  transform: scale(1.01); /* Increase the size by 10% on hover */
+}
+
+
+
+
+
+
+
+
+
+  
+  canvas {
+    width: 100dvw;
+    height: 100dvh;
+  }
+  
+
+  /* fopyer */
+  /* untikls
+   */
+   .text-col-white{
+    color: #efefef;
+   }
+   .text-col-grey{
+    color: #6e6a68 !important;
+   }
+
+   .bg-col-pink{
+    background-color: #F682A5;
+   }
+   
+   .bg-col-img{
+    background: url(https://creatorspace.imgix.net/users/clen84obd00p2pj0yje4zclxd/CpxDNXDhxwLbi6eF-2E84990B-A49B-47DB-94A2-2AAC0CE67DD6_1_105_c.jpeg?w=750&h=750);
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   
+   
+
+   
+
+   .bg-col-green{
+    background-color: #c9da8f;
+   }
+   .bg-col-orange{
+    background-color: rgb(253, 90, 30);
+   }
+   .bg-col-purple{
+    background-color: rgb(213, 117, 233);
+   }
+   .bg-col-black{
+    background-color: #252525;
+   }
+   .bg-col-yellow{
+    background-color: #FCDE6E;
+   }
+  
+ .bgfilter{
+      filter: drop-shadow(0px 0px 150px #2306c7) ;
+    } 
+  
+
+ 
