@@ -381,14 +381,6 @@ margin-top: 60px;
 
 
 
-@media (max-width: 768px) {
-  canvas {
-    height: 75vh  !important;
-    width: 100vw !important;
-    border-radius: 20px !important;
-  }
-  
- }
 
 
 
@@ -396,7 +388,7 @@ margin-top: 60px;
   canvas {
     width: 100dvw;
     height: 100dvh;
-    border-radius: 0 0 20px 20px;
+    
     border-radius: 20px !important;
   }
 
