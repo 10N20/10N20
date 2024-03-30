@@ -21,3 +21,32 @@ function openmenu(){
 
 
 
+gsap.registerPlugin(ScrollTrigger);
+
+const splitTypes = document.querySelectorAll('.text-reveal');
+
+splitTypes.forEach((element, index) => {
+    const bg = element.dataset.bgColor;
+    const fg = element.dataset.fgColor;
+
+    const text = new SplitType(element, { types: 'words' }); // Splitting into words instead of characters
+
+    gsap.fromTo(text.words,
+        {
+            color: bg,
+        },
+        {
+            color: fg,
+            duration: 0.3,
+            stagger: 0.02,
+            scrollTrigger: {
+                trigger: element,
+                start: 'top 80%',
+                end: 'top 20%',
+                scrub: true,
+                markers: false,
+                toggleActions: 'play play reverse reverse'
+            }
+        });
+});
+

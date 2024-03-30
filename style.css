@@ -10,9 +10,6 @@
 
 
 
-
-
-
 /* baclk adn white */
 @font-face {
     font-family: 'abd';
@@ -80,7 +77,7 @@ body,html{
     overflow-x: hidden;
     /* overflow-y: hidden ; */
     font-family: 'abd'  !important;
-    scroll-behavior: smooth !important;
+    scroll-behavior: auto !important;
     background: #10141B;
     
 }
@@ -224,8 +221,9 @@ div.content a:hover{
     color: white;
     font-size: 2rem;
     position: absolute;
-    top: 8px;
-    left: 268px;
+    top: 18px;
+    left: 258px;
+ 
     cursor: pointer;
   }
   button.close-nav:focus{
@@ -244,6 +242,26 @@ div.content a:hover{
   }
 }
 
+
+
+.contact-button{
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: rgb(78,58,180);
+  background: radial-gradient(circle, rgba(78,58,180,1) 0%, rgba(69,77,252,1) 100%);
+
+  color: whitesmoke;
+  
+}
+.contact-button:hover{
+ 
+  border-radius: 15px;
+  transition: 0.4s ease;
+
+
+
+}
+
 /* main */
 #heading {
     position: absolute;
@@ -255,6 +273,8 @@ div.content a:hover{
     text-align: center;
     /* font-family: 'abd-print' !important; */
    color: #1F1717;
+ 
+   
   
 }
 
@@ -364,7 +384,8 @@ margin-top: 60px;
 @media (max-width: 768px) {
   canvas {
     height: 75vh  !important;
-    width: 70vh !important;
+    width: 100vw !important;
+    border-radius: 20px !important;
   }
   
  }
@@ -375,8 +396,9 @@ margin-top: 60px;
   canvas {
     width: 100dvw;
     height: 100dvh;
+    border-radius: 0 0 20px 20px;
+    border-radius: 20px !important;
   }
-  
 
   /* fopyer */
   /* untikls
@@ -421,7 +443,10 @@ margin-top: 60px;
  .bgfilter{
       filter: drop-shadow(0px 0px 150px #2306c7) ;
     } 
-  
+ .bgfilter2{
+      filter: drop-shadow(0px 0px 70px #06e98a) ;
+    } 
+
     .client-section{
       text-align:center;
       padding: 20px;
@@ -437,3 +462,18 @@ margin-top: 60px;
   align-items: center;
 
     }
+    
+
+
+    ::-webkit-scrollbar{
+      width :.3rem;
+     }
+     ::-webkit-scrollbar-track{
+      background-color: #f3ecd8;
+      /* background: red; */
+     }
+     ::-webkit-scrollbar-thumb{
+      background-color: #292626;
+      border-radius: 5px;
+      /* border: 3px solid teal; */
+     }

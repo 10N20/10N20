@@ -30,9 +30,9 @@ At s10n20, we're more than just a web development agency; we're your partners in
                 <div class="nav-links">
                     <button class="close-nav" onclick="closemenu()"><i class="fas fa-times-circle"></i></button>
                     <ul class="links">
-                      <li><a href="#section-about">About</a></li>
-                      <li><a href="#section-offer">What we offer</a></li>
-                      <li><a href="#section-us">Why us</a></li>
+                      <li><a href="#section-about" onclick="lenis.scrollTo('#section-about')">About</a></li>
+                      <li><a href="#section-offer" onclick="lenis.scrollTo('#section-offer')">What we offer</a></li>
+                      <li><a href="#section-us" onclick="lenis.scrollTo('#section-us')">Why us</a></li>
                      
                       <li><a href="./contactus.html">Contact Us</a></li>
                     </ul>
@@ -49,7 +49,7 @@ At s10n20, we're more than just a web development agency; we're your partners in
       
         <section class="section-1 " >
             <div class="body-1">
-            <canvas id="c"></canvas>
+            <canvas id="c" loading="lazy"></canvas>
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
@@ -79,8 +79,10 @@ At s10n20, we're more than just a web development agency; we're your partners in
               <div class="row justify-content-center">
                   <div class="col-lg-8">
                       <section id="about-us" class="custom-section text-center" >
-                          <h2 class="mb-4 text-col-white text-reveal" >About Us</h2>
-                          <p class="text-reveal text-col-white" >At 10N20, we are a web development agency based in Jammu, Jammu and Kashmir. With our expertise and dedication, we strive to provide exceptional web development solutions to our clients. Our team of skilled professionals is committed to delivering high-quality websites that are not only visually appealing but also highly functional and user-friendly. Whether you need a simple website or a complex e-commerce platform, we have the knowledge and experience to meet your unique requirements. Trust 10N20 for all your web development needs and let us help you establish a strong online presence.</p>
+                          <h2 class="mb-4 text-col-white text-reveal h1-big" data-bg-color="#000" data-fg-color="#efefef" >About Us</h2>
+                          <p class="text-reveal text-col-white"  data-bg-color="#000" data-fg-color="#efefef">At 10N20, we are a web development agency based in Jammu, Jammu and Kashmir. With our expertise and dedication, we strive to provide exceptional web development solutions to our clients. Our team of skilled professionals is committed to delivering high-quality websites that are not only visually appealing but also highly functional and user-friendly. Whether you need a simple website or a complex e-commerce platform, we have the knowledge and experience to meet your unique requirements. Trust 10N20 for all your web development needs and let us help you establish a strong online presence.</p>
+
+                          <a href="./contactus.html"><button class="contact-button">Contact us</button></a>
                       </section>
                   </div>
               </div>
@@ -121,7 +123,7 @@ At s10n20, we're more than just a web development agency; we're your partners in
                 <p class="text-col-white">At 10N20, We Specialize In UI/UX And Logo Design, Crafting Captivating Digital Experiences. Trust Us To Elevate Your Software's Appeal And Engagement With Excellence In Every Aspect, From Interfaces To Branding.</p>
             </div>
         </div>  
-        <div class="grid-item d-none-1" data-aos="zoom-in">
+        <div class="grid-item d-none-1" data-aos="zoom-in" loading="lazy">
           <img src="https://img.freepik.com/free-vector/coding-workshop-concept-illustration_114360-22489.jpg?t=st=1711685057~exp=1711688657~hmac=f5af3bad5c96841df8a08823977c5890ad6faaedd79b2900a45c0cbef71f2418&w=1060" alt="Image 2">
           <!-- <div class="content">
               <h2>Title 2</h2>
@@ -146,7 +148,7 @@ At s10n20, we're more than just a web development agency; we're your partners in
 
         
 
-        <section class="section4" id="section-us">
+        <section class="section4 " id="section-us">
           
           <div class="container">
             <div class="row justify-content-center">
@@ -158,12 +160,12 @@ At s10n20, we're more than just a web development agency; we're your partners in
                 </div>
               </div>
             </div>
-          <div class="grid-container bgfilter-white " data-aos="zoom-in">
+          <div class="grid-container bgfilter-white  bgfilter-2" data-aos="zoom-in">
                   <div class="grid-item bg-col-green ">
                       <!-- <img src="image1.jpg" alt="Image 1"> -->
                       <div class="content-grid">
                           <h2 class="abd-print">Modern Design</h2>
-                          <p>Modern Design
+                          <p>
                             "At 10N20, We Redefine Software Development With Superior Design. Our Team Blends Creativity And Technical Expertise To Craft Captivating Solutions. Elevate Your Digital Presence With Us, Where Innovation Meets Aesthetics, And Form Harmoniously Follows Function."</p>
                       </div>
                   </div>
@@ -181,15 +183,15 @@ At s10n20, we're more than just a web development agency; we're your partners in
                           <p>"At 10N20, We Specialize In Driving Your Business Growth With Innovative Software Solutions. Our Experienced Team Crafts Custom Software Tailored To Your Needs, Whether Streamlining Operations, Enhancing Customer Experiences, Or Optimizing Processes. We Empower Your Business To Thrive Digitally By Leveraging Cutting-Edge Tech And Industry Best Practices, Delivering Scalable, Efficient Solutions. Let's Partner For Sustainable Growth And Stay Ahead. Together, We'll Turn Your Ideas Into Success Stories."</p>
                       </div>
                   </div>  
-                  <div class="grid-item d-none-1 ">
-                    <img src="https://img.freepik.com/free-vector/illustration-people-avatar-business-plan-concept_53876-37211.jpg?t=st=1711686252~exp=1711689852~hmac=3ea9a8cf901618436bf6d340516866ac70b4cc8f77685641cfbff2f4d33fb01f&w=1060" alt="Image 2">
+                  <div class="grid-item d-none-1 " loading="lazy">
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-finance-leaders-concept_23-2149157597.jpg?t=st=1711777599~exp=1711781199~hmac=d520cdaa154a555c36621d68182ac8dce6e415c90b40e2043c4f57a659bf9154&w=1060" alt="Image 2">
                     <!-- <div class="content">
                         <h2>Title 2</h2>
                         <p>Description 2</p>
                     </div> -->
                 </div>
                 
-                <div class="grid-item d-none-1">
+                <div class="grid-item d-none-1" loading="lazy">
                   <img src="https://img.freepik.com/free-vector/man-clipboard-with-infographic_24877-63700.jpg?t=st=1711686434~exp=1711690034~hmac=017d47d8f961f050a4d17ad45ec20e8c0a02737374cb0f119775a8e84ea746e3&w=1060" alt="Image 2">
                   <!-- <div class="content">
                       <h2>Title 2</h2>
@@ -218,7 +220,7 @@ At s10n20, we're more than just a web development agency; we're your partners in
 
             <div class="section-body ">
 
-                <div class="container">
+                <div class="container ">
                     <h2 data-aos="zoom-out-right" class="client-section pt-5 abd-print ">   <span
                             class=" section-1-span ">Our clients </span></h2>
                     <section data-aos="zoom-out-left" class="customer-logos slider mt-4 pb-5">
@@ -237,10 +239,10 @@ At s10n20, we're more than just a web development agency; we're your partners in
                   <section class="section5 mt-5 mb-5">
                     <div class="container pt-5 pb-5">
                       <div class="row">
-                          <div class="col-12 text-col-white  text-center " >
+                          <div class="col-12 text-col-white  text-center bgfilter2 "  data-aos="fade-up">
                               <h2 class="abd-print ">Socialize with Us</h2>
                               <p class="lead">Connect, Share, and Interact: Join Our Social Channels</p>
-                              <div class="social-icons">
+                              <div class="social-icons ">
                                 <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
                                 <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
                                 <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
@@ -269,7 +271,7 @@ At s10n20, we're more than just a web development agency; we're your partners in
   <!-- Right & Revered Section -->
   <div class="container">
       <div class="row">
-          <div class="col-12 text-center">
+          <div class="col-12 text-center"  data-aos="fade-up">
               <p class="text-muted text-col-grey">&copy; 10N20 All rights reserved <span id="currentYear"></span>. </p>
           </div>
       </div>
@@ -465,12 +467,58 @@ At s10n20, we're more than just a web development agency; we're your partners in
         new App()
         </script>
 
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
+        <!-- <script>
+         
+          const lenis = new Lenis()
+
+          lenis.on('scroll', (e) => {
+            console.log(e)
+          })
+          
+          function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+          }
+          
+          requestAnimationFrame(raf)
+
+        
+        </script> -->
+        <script>
+
+          const lenis = new Lenis()
+      
+          // Function to handle scroll events
+          function handleScroll(e) {
+              console.log("Scroll Event:", e)
+          }
+      
+          // Function to handle touch events
+          function handleTouch(e) {
+              console.log("Touch Event:", e)
+          }
+      
+          // Add event listeners for both scroll and touch events
+          lenis.on('scroll', handleScroll)
+          lenis.on('touch', handleTouch)
+      
+          // Function to continuously request animation frame
+          function raf(time) {
+              lenis.raf(time)
+              requestAnimationFrame(raf)
+          }
+      
+          // Start requesting animation frames
+          requestAnimationFrame(raf)
+      
+      </script>
+      
 
 
-
-
-
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="https://unpkg.com/split-type"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
