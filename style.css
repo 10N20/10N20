@@ -24,7 +24,18 @@
   src: url('./Intro-Font/Intro\ Inline.otf') format('opentype');
 
 }
-
+@media (max-width: 768px) {
+  .name {
+     font-size: 2rem; /* Adjust the font size for smaller screens */
+  }
+ }
+ 
+ /* For mobile devices */
+ @media (max-width: 480px) {
+  .name {
+     font-size: 1.5rem; /* Further reduce the font size for even smaller screens */
+  }
+ }
 #preloader {
   position: fixed;
   top: 0;
@@ -40,7 +51,7 @@
 
 .name {
   font-size: 3rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: aliceblue;
   text-align: center;
 }
@@ -249,7 +260,9 @@ div.content a:hover{
 
 /* bento grid */
 
-
+.h1-big{
+  font-size: 50px;
+}
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -281,14 +294,14 @@ margin-top: 60px;
 }
 
 .content-grid h2 {
-  margin: 0;
-  font-size: 44px;
+  margin: 0 ;
+  font-size: 40px;
 }
 
 .content-grid p {
   margin-top: 10px;
   font-size: 17px;
-  font-weight: 400 !important;
+  /* font-weight: 400 !important; */
   line-height: 1.8;
 }
 
@@ -348,6 +361,13 @@ margin-top: 60px;
 
 
 
+@media (max-width: 768px) {
+  canvas {
+    height: 75vh  !important;
+    width: 70vh !important;
+  }
+  
+ }
 
 
 
@@ -402,5 +422,18 @@ margin-top: 60px;
       filter: drop-shadow(0px 0px 150px #2306c7) ;
     } 
   
+    .client-section{
+      text-align:center;
+      padding: 20px;
+      font-size: 50px;
+    
+      /* font-family: 'Mouse Memoirs', sans-serif; */
+      color: #E96479;
+    }
+    /* Slider */
+    .customer-logos {
+      display: flex;
+  justify-content: center;
+  align-items: center;
 
- 
+    }
