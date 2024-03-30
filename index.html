@@ -25,14 +25,14 @@ At s10n20, we're more than just a web development agency; we're your partners in
 </div>
     <header>
      
-            <div class="navbar">
+            <div class="navbar ">
               <div class="logo"><h2><img src="./images/Screenshot_2024-03-09_112006-removebg-preview.png"  height="60px"></h2></div>
                 <div class="nav-links">
                     <button class="close-nav" onclick="closemenu()"><i class="fas fa-times-circle"></i></button>
                     <ul class="links">
-                      <li><a href="#section-about" onclick="lenis.scrollTo('#section-about')">About</a></li>
+                      <li><a href="#section-about" onclick="lenis.scrollTo('#section-about')" >About</a></li>
                       <li><a href="#section-offer" onclick="lenis.scrollTo('#section-offer')">What we offer</a></li>
-                      <li><a href="#section-us" onclick="lenis.scrollTo('#section-us')">Why us</a></li>
+                      <li><a href="#section-us" onclick="lenis.scrollTo('#section-us')" >Why us</a></li>
                      
                       <li><a href="./contactus.html">Contact Us</a></li>
                     </ul>
@@ -271,7 +271,7 @@ At s10n20, we're more than just a web development agency; we're your partners in
   <!-- Right & Revered Section -->
   <div class="container">
       <div class="row">
-          <div class="col-12 text-center"  data-aos="fade-up">
+          <div class="col-12 text-center"  >
               <p class="text-muted text-col-grey">&copy; 10N20 All rights reserved <span id="currentYear"></span>. </p>
           </div>
       </div>
@@ -488,28 +488,16 @@ At s10n20, we're more than just a web development agency; we're your partners in
         <script>
 
           const lenis = new Lenis()
-      
-          // Function to handle scroll events
-          function handleScroll(e) {
-              console.log("Scroll Event:", e)
-          }
-      
-          // Function to handle touch events
-          function handleTouch(e) {
-              console.log("Touch Event:", e)
-          }
-      
-          // Add event listeners for both scroll and touch events
-          lenis.on('scroll', handleScroll)
-          lenis.on('touch', handleTouch)
-      
-          // Function to continuously request animation frame
+
+          lenis.on('scroll', (e) => {
+            console.log(e)
+          })
+          
           function raf(time) {
-              lenis.raf(time)
-              requestAnimationFrame(raf)
+            lenis.raf(time)
+            requestAnimationFrame(raf)
           }
-      
-          // Start requesting animation frames
+          
           requestAnimationFrame(raf)
       
       </script>
