@@ -82,7 +82,7 @@ splitTypes.forEach((element, index) => {
         },
         {
             color: fg,
-            duration: 0.3,
+            duration: 0.1,
             stagger: 0.02,
             scrollTrigger: {
                 trigger: element,

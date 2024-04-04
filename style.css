@@ -2,7 +2,13 @@
 
 
 
-
+.font-small{
+  font-family:'abd-light'  !important;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: capitalize;
+  font: bold;
+}
 
 
 
@@ -19,6 +25,11 @@ body{
 @font-face {
   font-family: 'abd-print';
   src: url('./Intro-Font/Intro\ Inline.otf') format('opentype');
+
+}
+@font-face {
+  font-family: 'abd-light';
+  src: url('./Intro-Font/Intro\ Regular\ Alt.otf') format('opentype');
 
 }
 @media (max-width: 768px) {
@@ -70,7 +81,8 @@ body{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* text-rendering: optimizeSpeed; */
+  user-select: none;
+  text-rendering: optimizeSpeed;
   
 }
 body,html{
@@ -260,8 +272,8 @@ div.content a:hover{
 .contact-button{
   padding: 10px 15px;
   border-radius: 5px;
-  background: rgb(78,58,180);
-  background: radial-gradient(circle, rgba(78,58,180,1) 0%, rgba(69,77,252,1) 100%);
+  /* background: rgb(78,58,180);
+  background: radial-gradient(circle, rgba(78,58,180,1) 0%, rgba(69,77,252,1) 100%); */
 
   color: whitesmoke;
   
@@ -478,14 +490,19 @@ margin-top: 60px;
 
 
     ::-webkit-scrollbar{
-      width :.3rem;
+      width :.4rem;
      }
      ::-webkit-scrollbar-track{
       background-color: #f3ecd8;
   
      }
      ::-webkit-scrollbar-thumb{
-      background-color: #5c5a5a;
-      border-radius: 5px;
+      background-color: rgb(253, 90, 30);
+      border-radius: 8px;
     
+     }
+
+
+     .bg-image{
+      background: url(https://img.freepik.com/premium-photo/3d-rendering-red-mountain-contour-lines-topographic-terrain_167650-1034.jpg?w=1060);
      }
