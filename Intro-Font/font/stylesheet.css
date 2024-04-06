@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'CRR NTN';
+    src: url('CRRNTN-Regular.eot');
+    src: local('CRR NTN'), local('CRRNTN-Regular'),
+        url('CRRNTN-Regular.eot?#iefix') format('embedded-opentype'),
+        url('CRRNTN-Regular.woff2') format('woff2'),
+        url('CRRNTN-Regular.woff') format('woff'),
+        url('CRRNTN-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CRR NTN Outline';
+    src: url('CRRNTN-Outline.eot');
+    src: local('CRR NTN Outline'), local('CRRNTN-Outline'),
+        url('CRRNTN-Outline.eot?#iefix') format('embedded-opentype'),
+        url('CRRNTN-Outline.woff2') format('woff2'),
+        url('CRRNTN-Outline.woff') format('woff'),
+        url('CRRNTN-Outline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

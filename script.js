@@ -95,3 +95,9 @@ splitTypes.forEach((element, index) => {
         });
 });
 
+
+
+
+
+
+
