@@ -1,0 +1,40 @@
+.colour-red{
+background-color: #ff5959;
+}
+.colour-dark{
+background-color: #0F0D18;
+}
+.text-red{
+color: #ff5959;
+}
+.text-dark{
+color: #0F0D18;
+}
+
+.height-pc1 {
+    height: 70dvh;
+}
+.text-font-size{
+    font-size:6rem;
+
+}
+
+@media (max-width: 768px) {
+    .height-pc1 {
+        height: auto; /* Reset height for smaller screens */
+    }
+
+    .pt-5 {
+        padding-top: 3rem !important;
+    }
+
+    .pb-5 {
+        padding-bottom: 3rem !important;
+    }
+
+   
+    .text-font-size{
+        font-size:3rem;
+    
+    }
+}
